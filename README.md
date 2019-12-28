@@ -1,4 +1,4 @@
-# My conky configuration
+# conky configuration
 
 update the weather.py with your own api key and city id
 API_KEY="YOUR_API_KEY"
