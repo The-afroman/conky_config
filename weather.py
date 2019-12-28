@@ -28,12 +28,12 @@ if __name__ == "__main__":
     from os import environ
     from os.path import expanduser
 
-    API_KEY = environ.get('OWM_API_KEY')
-    CITY_ID = int(environ.get('OWM_CITY_ID'))
+    API_KEY = 'e72ce2275dbd6b6f5d0a1680f0e8d574'
+    CITY_ID = 5373763
     DATA_PATH = f'{expanduser("~")}/.conky/weather/'
 
     weather_data = get_data(API_KEY)
     with open(f"{DATA_PATH}data", 'w') as final_file:
-        final_file.write(f"{weather_data.get_temperature(unit='celsius')['temp']:.0f}\n")
+        final_file.write(f"{weather_data.get_temperature(unit='fahrenheit')['temp']:.0f}\n")
         final_file.write(f"{weather_data.get_wind()['speed']*3.6:.1f}\n")
         final_file.write(f"{weather_data.get_humidity()}%")
