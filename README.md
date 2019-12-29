@@ -27,5 +27,8 @@ pip3 install --user -r requirements.txt
 
 conky -c system.conf && conky -c weather.conf
 ```
-make sure to create ~/.conky & ~/.conky/data directories if they do not already exist
+make sure to create ~/.conky & ~/.conky/weather directories if they do not already exist
+```bash
+mkdir ~/.conky && mkdir ~/.conky/weather
+```
 
