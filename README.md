@@ -32,3 +32,9 @@ make sure to create ~/.conky & ~/.conky/weather directories if they do not alrea
 mkdir ~/.conky && mkdir ~/.conky/weather
 ```
 
+To get drive temps to display, install smartctl & hddtemp (smartctl is only required for nvme ssds because hddtemp is unable to access nvme drives), the system conky must be run with sudo 
+```bash
+sudo conky -c /home/user/system.conf
+```
+use a systemd service to run on startup or whatever method you prefer
+

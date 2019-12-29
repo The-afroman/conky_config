@@ -28,8 +28,8 @@ if __name__ == "__main__":
     from os import environ
     from os.path import expanduser
 
-    API_KEY = 'YOUR KEY HERE'
-    CITY_ID = YOUR CITY ID HERE
+    API_KEY = 'e72ce2275dbd6b6f5d0a1680f0e8d574'
+    CITY_ID = 5373763
     DATA_PATH = f'{expanduser("~")}/.conky/weather/'
 
     weather_data = get_data(API_KEY)
